@@ -1,8 +1,8 @@
 import { Header } from "../header/header";
 import { Menu } from "../menu/menu";
 import { Footer } from "../footer/footer";
-
-import "./App.css";
+import { Form1 } from "../form/form1";
+import "./App.scss";
 import { AppRouter } from "../app.router/app.router";
 
 export type MenuOption = {
@@ -21,7 +21,9 @@ export function App() {
     <div className="App">
       <Header></Header>
       <Menu options={menuOptions}></Menu>
+      <Form1></Form1>
       <AppRouter menuOptions={menuOptions}></AppRouter>
+
       <Footer></Footer>
     </div>
   );
