@@ -60,6 +60,6 @@ export class TaskApiRepo {
     const resp = await fetch(url, {
       method: "DELETE",
     });
-    if (!resp.ok) throw new Error("Delete not possible");
+    if (!resp.ok) throw new Error("Delete  not possible");
   }
 }
